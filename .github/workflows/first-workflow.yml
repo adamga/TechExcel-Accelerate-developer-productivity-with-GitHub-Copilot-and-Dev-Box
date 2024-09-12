@@ -1,4 +1,4 @@
-name: First Workflow
+name: Manual Trigger Workflow
 
 on:
   workflow_dispatch:
@@ -11,5 +11,3 @@ jobs:
 		run: echo "Step 1 complete!"
 	  - name: Step 2
 		run: echo "Step 2 complete!"
-
-
