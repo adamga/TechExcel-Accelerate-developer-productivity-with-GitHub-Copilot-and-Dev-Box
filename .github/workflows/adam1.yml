@@ -17,4 +17,4 @@
        uses: github/codeql-action/analyze@v1
        with:
          category: "bicep"
-         config-file: .github/codeql/bicep-config.yml
+         config-file: .github/config.yml
