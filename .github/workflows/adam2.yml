@@ -7,8 +7,8 @@
      name: Analyze
      runs-on: ubuntu-latest
      steps:
-     - name: Run Template Analyzer
-       run: |
-         npm install -g @azure/template-analyzer
-         template-analyzer analyze --path .
-           - name: Perform CodeQL Analysis
+     - name: Run Microsoft Security DevOps Analysis
+       uses: microsoft/security-devops-action@preview
+       id: msdo
+       with:
+          categories: 'IaC'
