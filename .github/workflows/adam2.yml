@@ -15,7 +15,7 @@
        uses: microsoft/security-devops-action@latest
        id: msdo
        with:
-          categories: 'IaC'
+          tools: templateanalyzer
      - name: Upload results to Security tab
        uses: github/codeql-action/upload-sarif@v2
        with:
