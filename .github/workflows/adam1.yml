@@ -1,4 +1,4 @@
- name: "CodeQL"
+ name: "Adam1-CodeQL"
  on:
   workflow_dispatch:
     
