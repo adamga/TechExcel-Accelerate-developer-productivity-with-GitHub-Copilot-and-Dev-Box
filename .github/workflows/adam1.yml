@@ -18,3 +18,12 @@
        with:
          category: "bicep"
          config-file: .github/config.yml
+     - name: Run Checkov
+       uses: bridgecrewio/checkov-action@master
+       with:
+         args: --directory .
+     - name: Run Template Analyzer
+       run: |
+         npm install -g @azure/template-analyzer
+         template-analyzer analyze --path .
+
