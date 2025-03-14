@@ -9,15 +9,6 @@
      steps:
      - name: Checkout repository
        uses: actions/checkout@v2
-     - name: Initialize CodeQL
-       uses: github/codeql-action/init@v1
-       with:
-         languages: bicep
-     - name: Perform CodeQL Analysis
-       uses: github/codeql-action/analyze@v1
-       with:
-         category: "bicep"
-         config-file: .github/config.yml
      - name: Run Checkov
        uses: bridgecrewio/checkov-action@master
        with:
@@ -26,4 +17,6 @@
        run: |
          npm install -g @azure/template-analyzer
          template-analyzer analyze --path .
+           - name: Perform CodeQL Analysis
+
 
